@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departd — Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0f;
+            color: #e0e0e8;
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 28px;
+            color: #00e5c8;
+            margin-bottom: 8px;
+        }
+        h2 {
+            font-size: 18px;
+            color: #ffffff;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #1e2140;
+        }
+        h3 {
+            font-size: 15px;
+            color: #00e5c8;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+        p, li {
+            font-size: 14px;
+            color: #b0b4c8;
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 12px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        .subtitle {
+            font-size: 15px;
+            color: #9099c0;
+            margin-bottom: 28px;
+            font-style: italic;
+        }
+        .contact-box {
+            background: #0f1020;
+            border: 1px solid #00e5c844;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 24px 0;
+            text-align: center;
+        }
+        .contact-box a {
+            display: inline-block;
+            background: #00e5c8;
+            color: #0a0a0f;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15px;
+            margin-top: 12px;
+        }
+        .contact-box a:hover {
+            opacity: 0.9;
+        }
+        .contact-box p {
+            color: #9099c0;
+            margin-bottom: 4px;
+        }
+        .faq-item {
+            background: #0f1020;
+            border: 1px solid #1e2140;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+        }
+        .faq-item .question {
+            font-size: 14px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+        .faq-item .answer {
+            font-size: 13px;
+            color: #9099c0;
+            line-height: 1.6;
+        }
+        a {
+            color: #00e5c8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .links {
+            display: flex;
+            gap: 20px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+        .links a {
+            font-size: 13px;
+            color: #6b7299;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #1e2140;
+            font-size: 12px;
+            color: #6b7299;
+        }
+        .version-badge {
+            display: inline-block;
+            background: rgba(0, 229, 200, 0.1);
+            color: #00e5c8;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Departd</h1>
+        <p style="font-size: 20px; color: #ffffff; margin-bottom: 4px;">Support</p>
+        <p class="subtitle">The alarm that calculates when to wake you up — and adjusts overnight while you sleep.</p>
+        <span class="version-badge">Version 1.0</span>
+
+        <div class="contact-box">
+            <p>Have a question, found a bug, or want to share feedback?</p>
+            <p style="font-size: 13px;">We typically respond within 24 hours.</p>
+            <a href="mailto:chris.radtke0@gmail.com?subject=Departd%20Support%20Request">Contact Support</a>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <div class="question">How does Departd calculate my wake-up time?</div>
+            <div class="answer">Departd reads your calendar events, calculates real-time travel time to each event's location, checks weather conditions, and adds your personal preparation time. It works backward from your event start time: event time − travel − weather buffer − prep time = your wake-up time. All of this happens automatically.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">What is the Background Traffic Watcher?</div>
+            <div class="answer">While you sleep, Departd periodically checks traffic conditions on your route. If conditions deteriorate overnight (e.g., an accident, road closure, or severe weather), the app automatically adjusts your alarm earlier so you still arrive on time. You don't need to do anything — it happens in the background.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Does Departd work with virtual meetings?</div>
+            <div class="answer">Yes. Departd detects virtual meetings (Zoom, Microsoft Teams, Google Meet, Webex, and others) from your calendar events and skips travel calculations. Instead, it shows a "Join Meeting" button that opens the meeting directly in the correct app.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">What is Triage Mode?</div>
+            <div class="answer">If conditions change and on-time arrival becomes impossible, Departd switches to Triage Mode. It offers recovery options: skip an optional stop (like your coffee run), open navigation for the fastest route, or send a quick "running late" message — all with one tap.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">What permissions does Departd need?</div>
+            <div class="answer">Departd needs three permissions to work: <strong>Calendar</strong> access to read your events, <strong>Location</strong> access to calculate travel times and detect when you arrive, and <strong>Notifications</strong> to deliver your alarm and departure alerts. You can adjust these anytime in iOS Settings. The app will work with reduced functionality if permissions are revoked.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Will my alarm still go off if I lose internet overnight?</div>
+            <div class="answer">Yes. Departd sets your initial alarm based on the last known conditions. The Background Traffic Watcher attempts to update it overnight, but if the network is unavailable, your original alarm time remains set. We recommend also setting a backup alarm for critical events like flights.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Does Departd track my location or sell my data?</div>
+            <div class="answer">No. All calendar and location processing happens on your device. We only send your destination coordinates (not personal information) to weather and mapping services to calculate travel conditions. We do not have user accounts, we do not track you, and we do not sell any data. See our <a href="https://chrisradtke0.github.io/smartalarm-legal/privacy-policy.html">Privacy Policy</a> for full details.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">How do I restore my settings on a new device?</div>
+            <div class="answer">Departd syncs your settings (home address, work address, preparation times, transport preferences, and other configuration) to iCloud automatically. When you install Departd on a new device signed into the same Apple ID, your settings will be restored. Make sure iCloud is enabled for Departd in iOS Settings → [Your Name] → iCloud → Apps Using iCloud.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">How do I cancel my Pro or Family subscription?</div>
+            <div class="answer">Subscriptions are managed through Apple. Go to iOS Settings → [Your Name] → Subscriptions → Departd → Cancel Subscription. Your Pro features will remain active until the end of your current billing period.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">The app gave me the wrong travel time. What should I do?</div>
+            <div class="answer">Travel time estimates come from Apple Maps and can occasionally be inaccurate, especially for new routes or during unusual conditions. You can adjust your buffer time in Settings to add extra padding. If you consistently see inaccurate times for a specific route, please contact us with details and we'll investigate. Always set a backup alarm for time-critical events.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">I'm having trouble with the app. What information should I include when contacting support?</div>
+            <div class="answer">To help us troubleshoot quickly, please include: your iPhone model, iOS version, a description of the issue, and if possible, a screenshot. If the issue involves a specific event or route, let us know the general details (e.g., "commute from home to downtown, morning event"). You can send all of this to <a href="mailto:chris.radtke0@gmail.com?subject=Departd%20Bug%20Report">chris.radtke0@gmail.com</a>.</div>
+        </div>
+
+        <h2>Troubleshooting</h2>
+
+        <div class="faq-item">
+            <div class="question">My alarm didn't fire</div>
+            <div class="answer">Check that Notifications are enabled for Departd in iOS Settings → Notifications → Departd. Make sure Do Not Disturb or a Focus Mode isn't blocking Departd notifications — you can add Departd as an allowed app in your Focus settings. Also verify that the app has calculated an alarm (you should see a wake-up or departure time on the main screen).</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">The app doesn't see my calendar events</div>
+            <div class="answer">Go to iOS Settings → Privacy & Security → Calendars and make sure Departd is toggled on. If you use multiple calendar accounts (iCloud, Google, Exchange), verify the specific calendar containing your events is enabled in the Apple Calendar app as well.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Background updates aren't working</div>
+            <div class="answer">iOS manages background activity to preserve battery life. Make sure Background App Refresh is enabled for Departd in iOS Settings → General → Background App Refresh. Also ensure Departd is not in Low Power Mode restrictions. Note that iOS may still delay background tasks based on system conditions — this is normal and expected.</div>
+        </div>
+
+        <div class="links">
+            <a href="https://chrisradtke0.github.io/smartalarm-legal/privacy-policy.html">Privacy Policy</a>
+            <a href="https://chrisradtke0.github.io/smartalarm-legal/terms-of-use.html">Terms of Use</a>
+            <a href="mailto:chris.radtke0@gmail.com">chris.radtke0@gmail.com</a>
+        </div>
+
+        <div class="footer">
+            © 2026 Christopher Radtke. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
