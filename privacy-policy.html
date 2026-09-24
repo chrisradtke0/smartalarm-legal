@@ -103,96 +103,41 @@
 </head>
 <body>
     <div class="container">
-        <h1>Departd</h1>
-        <p style="font-size: 20px; color: #ffffff; margin-bottom: 4px;">Privacy Policy</p>
-        <p class="subtitle">Effective Date: February 28, 2026 · Last Updated: March 2, 2026</p>
+        <h1>Departd — Privacy Policy</h1>
+        <p class="subtitle">Effective Date: September 24, 2026 · Last Updated: September 24, 2026</p>
 
         <div class="summary">
-            <strong>The short version:</strong> Departd processes your calendar and location data primarily on your device to calculate wake-up and departure times. We do not sell your data, we do not track you, and we do not send your personal information to external servers beyond what is strictly necessary for core functionality (weather and traffic APIs). Your preferences are optionally synced via Apple iCloud for backup and cross-device continuity.
+            <strong>The short version:</strong> Departd works out when to wake you and when to leave by reading your calendar and location on your iPhone. Most of that work happens on the device. A small amount of data does leave it: map coordinates to get the weather, flight numbers to check flight status, anonymous usage statistics and crash reports to keep the app working, and (if iCloud is on) your settings and saved places so they follow you to a new phone. We don't sell your data. We don't show ads. We don't track you across other companies' apps or websites. We don't ask for your name or email, and there is no Departd account.
         </div>
 
-        <h2>1. Introduction</h2>
-        <p>Departd ("we," "our," or "the app") is developed by Christopher Radtke. This Privacy Policy explains how we collect, use, and protect your information when you use the Departd iOS application. We are committed to protecting your privacy and being transparent about our data practices.</p>
-
-        <h2>2. Information We Access</h2>
-        <p>Departd accesses the following data on your device to provide its core functionality:</p>
-        <table>
-            <thead>
-                <tr><th>Data Type</th><th>Purpose</th><th>Storage</th></tr>
-            </thead>
-            <tbody>
-                <tr><td><strong>Calendar Events</strong></td><td>Read event titles, times, locations, and URLs to calculate optimal wake-up and departure times, detect virtual meetings, and orchestrate full-day schedules</td><td>On-Device Only</td></tr>
-                <tr><td><strong>Location (Precise)</strong></td><td>Calculate travel time to event destinations, detect arrival at events, and monitor geographic movement between events</td><td>On-Device Only</td></tr>
-                <tr><td><strong>Location (Background)</strong></td><td>Detect arrival at event locations via geofencing and monitor overnight traffic conditions for alarm adjustments</td><td>On-Device Only</td></tr>
-                <tr><td><strong>Notification Preferences</strong></td><td>Deliver alarm notifications, departure alerts, triage mode alerts, and schedule briefings</td><td>On-Device Only</td></tr>
-                <tr><td><strong>Installed App Detection</strong></td><td>Check whether wellness partner apps (e.g., Peloton, Headspace) are installed to enable deep-link integrations</td><td>On-Device Only (not transmitted)</td></tr>
-            </tbody>
-        </table>
-
-        <h2>3. External Services</h2>
-        <p>Departd communicates with the following third-party services to provide core features:</p>
-
-        <h3>Weather Data (Apple WeatherKit &amp; OpenWeatherMap)</h3>
-        <p>We use Apple WeatherKit as our primary weather provider and OpenWeatherMap as a fallback. Your event destination coordinates (latitude and longitude only — not your name, calendar data, or personal information) are sent to retrieve weather forecasts. This data is used to calculate weather-based buffers for your travel time. OpenWeatherMap's privacy policy is available at <a href="https://openweather.co.uk/privacy-policy">openweather.co.uk/privacy-policy</a>. Apple WeatherKit usage is governed by <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
-
-        <h3>Route Calculation (Apple MapKit)</h3>
-        <p>We use Apple's MapKit framework to calculate driving, transit, walking, and cycling routes between your location and event destinations. This processing is handled by Apple's services under Apple's privacy policy.</p>
-
-        <h3>Subscription Management (RevenueCat)</h3>
-        <p>We use RevenueCat to manage subscription purchases and entitlements. RevenueCat receives a pseudonymous user identifier and purchase receipts from the App Store. RevenueCat does not receive your name, email, calendar data, or location data. RevenueCat's privacy policy is available at <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>.</p>
-
-        <h3>iCloud Key-Value Storage (Apple)</h3>
-        <p>If you have iCloud enabled on your device, Departd syncs your app preferences (home address, work address, preparation times, transport preferences, and other settings) to Apple's iCloud Key-Value Store. This allows your settings to be restored if you reinstall the app or set up a new device. This data is encrypted by Apple in transit and at rest under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. Calendar event data, location history, and personal analytics are never synced to iCloud — only configuration preferences.</p>
-
-        <h2>4. Data We Do NOT Collect</h2>
-        <p>We do <strong>not</strong> collect, store, or transmit:</p>
-        <ul>
-            <li>Your name, email address, or account credentials</li>
-            <li>The content of your calendar events (titles, descriptions, attendees) to any external server</li>
-            <li>Your location history or movement patterns to any external server</li>
-            <li>Device identifiers for advertising purposes</li>
-            <li>Any data for third-party advertising or marketing</li>
-            <li>Analytics or behavioral tracking data</li>
-            <li>Information about which third-party apps are installed on your device (this check is performed locally and the result is not transmitted)</li>
-        </ul>
-
-        <h2>5. On-Device Processing</h2>
-        <p>The vast majority of Departd's processing happens entirely on your device. Calendar event analysis, wake-up time calculation, preparation time learning, event category classification, virtual meeting detection, journey state management, transition time estimation, streak tracking, wellness slot calculation, and routine insights are all computed locally. Your data never leaves your device except for the specific external service calls described in Section 3.</p>
-
-        <h2>6. Data Storage and Security</h2>
-        <p>All persistent data (alarm settings, learned preparation times, route history, and preferences) is stored on your device using encrypted storage (iOS Keychain with <code>kSecAttrAccessibleWhenUnlockedThisDeviceOnly</code> protection) or local app storage. Sensitive data including API keys, cached locations, and transition history is encrypted at rest.</p>
-        <p>App preferences (non-sensitive settings such as home address, preparation times, and transport preferences) are additionally synced to Apple's iCloud Key-Value Store for backup and cross-device continuity, encrypted by Apple in transit and at rest.</p>
-        <p>Location history older than 90 days is automatically purged from the device.</p>
-
-        <h2>7. Family Tier and Household Profiles</h2>
-        <p>The Departd Family tier allows creation of up to 6 household profiles within a single device. All household profile data (names, preparation times, preferences) is stored locally on the device. Household data is not synced to external servers or shared between devices.</p>
-
-        <h2>8. Wellness App Integrations</h2>
-        <p>Departd offers optional integrations with third-party wellness and fitness applications (such as Peloton, Headspace, Orange Theory, Strava, and others). These integrations work via URL deep-linking only — Departd checks whether a partner app is installed on your device and, if so, can open that app for you. Departd does not exchange any user data with these third-party apps, does not access your accounts within those apps, and does not receive any information from those apps. The deep-link check is performed locally on your device and the result is not transmitted to any server.</p>
-
-        <h2>9. Children's Privacy</h2>
-        <p>Departd is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided personal information through the app, please contact us and we will take steps to delete such information.</p>
-
-        <h2>10. Your Rights and Choices</h2>
-
-        <h3>Permissions</h3>
-        <p>You can revoke calendar or location permissions at any time through iOS Settings. The app will continue to function with reduced capabilities (manual alarm setting) if permissions are revoked.</p>
-
-        <h3>iCloud Sync</h3>
-        <p>You can disable iCloud sync for Departd in iOS Settings → [Your Name] → iCloud → Apps Using iCloud. Disabling sync will not delete data already on your device but will stop preferences from being backed up or synced to other devices.</p>
-
-        <h3>Data Deletion</h3>
-        <p>Uninstalling Departd permanently deletes all data stored by the app on your device. To also remove iCloud-synced preferences, disable iCloud sync for Departd before uninstalling, or manually clear iCloud storage in iOS Settings. There is no additional server-side data to request deletion of, as we do not maintain user accounts or cloud databases.</p>
-
-        <h3>Subscription Management</h3>
-        <p>Subscriptions can be managed or cancelled at any time through your Apple ID settings in the App Store.</p>
-
-        <h2>11. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. We will notify you of material changes by updating the "Last Updated" date at the top of this page and, where appropriate, through an in-app notification. Your continued use of Departd after changes are posted constitutes acceptance of the revised policy.</p>
-
-        <h2>12. Contact Us</h2>
-        <p>If you have questions or concerns about this Privacy Policy or Departd's data practices, please contact us at:</p>
-        <p><a href="mailto:hello@departd.app">hello@departd.app</a></p>
+<h2>1. Introduction</h2>
+<p>Departd ("we," "our," or "the app") is developed by Christopher Radtke. This policy explains what information the Departd iOS app uses, what leaves your device, who receives it, and the choices you have.</p>
+<h2>2. Information the app uses on your device</h2>
+<table><thead><tr><th scope="col">Data</th><th scope="col">What the app does with it</th><th scope="col">Leaves your device?</th></tr></thead><tbody><tr><td>Calendar events</td><td>Reads event titles, times, locations, notes and links to work out your wake-up and departure times and to spot virtual meetings. When you ask it to schedule a reminder, it adds an event to your calendar.</td><td>Mostly no. Exceptions are listed in Section 3 (flight numbers, address lookups) and Section 4 (saved places, if iCloud is on).</td></tr><tr><td>Reminders</td><td>Reads your reminders to suggest times for them. When you tap to do so, it marks a reminder complete or adds it to your calendar.</td><td>No</td></tr><tr><td>Precise location</td><td>Works out travel time to your events and detects when you arrive.</td><td>Coordinates only, to Apple and our weather provider (Section 3)</td></tr><tr><td>Background location</td><td>Uses iOS geofences (areas around an event location that iOS watches for you) and significant-location-change alerts to detect arrival and keep your alarm current overnight. The app does not track your position continuously.</td><td>No</td></tr><tr><td>Notifications</td><td>Delivers alarms, departure alerts and briefings.</td><td>No</td></tr><tr><td>Installed-app check</td><td>Checks whether partner apps (for example Peloton, Headspace or Uber) are installed so it can open them for you.</td><td>No. The check runs on your device and the result is never sent.</td></tr></tbody></table>
+<h2>3. Services that receive data</h2>
+<ul><li><strong>Apple (WeatherKit, MapKit and Maps search).</strong> Your location and your events' addresses are sent to Apple to get the weather, calculate routes and look up addresses. Apple's privacy policy applies.</li><li><strong>OpenWeatherMap (backup weather provider).</strong> Receives latitude and longitude only, with no name or calendar details, when Apple's weather service is unavailable. <a href="https://openweather.co.uk/privacy-policy">openweather.co.uk/privacy-policy</a></li><li><strong>AviationStack (flight status).</strong> If an upcoming event looks like a flight, the app automatically finds a flight code in the event's title, location or notes (for example "UA 456") and sends that code and the travel date to AviationStack to check its status. It rechecks while the flight is upcoming. Nothing else from your calendar is sent.</li><li><strong>RevenueCat (subscriptions).</strong> Receives an anonymous identifier and your App Store purchase records so your subscription works. It receives no name, email, calendar or location data. <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></li><li><strong>TelemetryDeck (anonymous usage statistics).</strong> Receives app events: that the app was opened, plus steps such as "finished setup", "set first alarm", "viewed subscription screen", "started trial", "subscribed" and "opened morning briefing". Each event carries a random identifier the app creates for itself, which is not your device ID or an advertising ID, and basic technical details: device model, iOS version, language, time zone, and how many days you have used the app. The "set first alarm" event, and later subscription events, also record one broad category for your first alarm: a flight, an early start before 7 a.m., or other. The name, time, place and any other details of your calendar events are never sent. We use this only to understand which parts of the app work and which don't. <a href="https://telemetrydeck.com/privacy">telemetrydeck.com/privacy</a></li><li><strong>Sentry (crash and performance reports).</strong> If the app crashes, freezes or hits an error, it sends a technical report: device model, iOS and app version, what the app was doing, and a record of recent technical steps. That record can include the addresses of recent requests to the services above, which may carry the map coordinates used for a weather lookup or a flight code. Reports are not linked to your name or email, and screenshots are never included. <a href="https://sentry.io/privacy/">sentry.io/privacy</a></li><li><strong>GitHub (only if you send feedback).</strong> If you use the in-app feedback form, the message you write goes to our private GitHub issue tracker, along with an optional screenshot you choose, your device model, iOS and app versions, the app's current state and recent app logs.</li></ul>
+<p>We do not sell or rent data to anyone, and we do not share it with advertisers or data brokers.</p>
+<h2>4. iCloud sync (Apple)</h2>
+<p>If iCloud is on for Departd, the app saves these to Apple's iCloud Key-Value Store so they come back when you reinstall or switch phones:</p>
+<ul><li><strong>Your settings:</strong> preparation times, transport and navigation preferences, alarm sound, theme and similar.</li><li><strong>Places you have saved for recurring events:</strong> the event name, the address you entered, and its map coordinates.</li><li><strong>Multi-stop routes you have saved:</strong> their names, the events they match, and their stops.</li></ul>
+<p>Apple encrypts this data in transit and when stored. Your full calendar and your movement history are not synced.</p>
+<h2>5. What we do not do</h2>
+<ul><li>We don't ask for or collect your name, email address or account login. There is no Departd account.</li><li>We don't use your data for advertising, and we don't access your device's advertising identifier.</li><li>We don't track you across other companies' apps or websites.</li><li>We don't sell your data.</li><li>We don't send the results of the installed-app check anywhere.</li></ul>
+<h2>6. On-device processing</h2>
+<p>Calendar analysis, wake-up and departure calculations, learning your preparation times, event classification, virtual-meeting detection, streaks, wellness suggestions and routine insights are all worked out on your iPhone. Data leaves the device only as described in Sections 3 and 4.</p>
+<h2>7. Storage, security and retention</h2>
+<p>Your home and work addresses, home coordinates, your parking location and the contacts you choose to share your arrival time with are stored in the iOS Keychain. They are locked to this device and readable only while it is unlocked. Other app data sits in the app's own storage on your iPhone, protected by iOS's built-in device encryption.</p>
+<p>Most location history the app keeps (arrival records and travel-time patterns) is deleted automatically after 90 days, and overnight location samples after 7 days. Places and routes you save, and addresses you have confirmed, are kept until you delete them or remove the app.</p>
+<h2>8. Wellness and transport app links</h2>
+<p>Departd can open partner apps such as Peloton, Headspace, Strava, Uber, Lyft, Google Maps or Waze. It does this with links only. Departd does not sign in to your accounts in those apps and exchanges no data with them.</p>
+<h2>9. Children's privacy</h2>
+<p>Departd is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided personal information through the app, contact us and we will delete it.</p>
+<h2>10. Your choices</h2>
+<ul><li><strong>Permissions:</strong> you can turn off calendar, reminders, location or notification access at any time in iOS Settings. The app keeps working with fewer features (for example, setting alarms by hand).</li><li><strong>iCloud sync:</strong> turn it off in iOS Settings → [your name] → iCloud → Apps Using iCloud. Data already on your phone is not deleted.</li><li><strong>Deleting your data:</strong> removing Departd deletes everything it stores on your iPhone. To remove synced data, turn off iCloud sync for Departd before removing the app. Usage statistics and crash reports aren't linked to your identity, but if you would like them deleted, email us and we will ask our providers to delete what they can match.</li><li><strong>Subscriptions:</strong> manage or cancel them in your Apple ID settings in the App Store.</li></ul>
+<h2>11. Changes to this policy</h2>
+<p>If we change this policy, we will update the "Last Updated" date above, and for significant changes we will tell you in the app.</p>
+<h2>12. Contact us</h2>
+<p><a href="mailto:hello@departd.app">hello@departd.app</a></p>
 
         <div class="footer">
             © 2026 Christopher Radtke. All rights reserved.

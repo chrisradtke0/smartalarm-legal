@@ -139,88 +139,15 @@
     <div class="container">
         <h1>Departd</h1>
         <p style="font-size: 20px; color: #ffffff; margin-bottom: 4px;">Support</p>
-        <p class="subtitle">The alarm that calculates when to wake you up — and adjusts overnight while you sleep.</p>
-        <span class="version-badge">Version 1.0</span>
+        <p class="subtitle">The alarm your calendar sets.</p>
 
         <div class="contact-box">
-            <p>Have a question, found a bug, or want to share feedback?</p>
-            <p style="font-size: 13px;">We typically respond within 24 hours.</p>
-            <a href="mailto:hello@departd.app?subject=Departd%20Support%20Request">Contact Support</a>
+            <p>Have a question, found a bug, or want to share feedback? Email us. We read every message.</p>
+            <a href="mailto:hello@departd.app?subject=Departd%20Support%20Request">hello@departd.app</a>
         </div>
 
-        <h2>Frequently Asked Questions</h2>
-
-        <div class="faq-item">
-            <div class="question">How does Departd calculate my wake-up time?</div>
-            <div class="answer">Departd reads your calendar events, calculates real-time travel time to each event's location, checks weather conditions, and adds your personal preparation time. It works backward from your event start time: event time − travel − weather buffer − prep time = your wake-up time. All of this happens automatically.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="question">What is the Background Traffic Watcher?</div>
-            <div class="answer">While you sleep, Departd periodically checks traffic conditions on your route. If conditions deteriorate overnight (e.g., an accident, road closure, or severe weather), the app automatically adjusts your alarm earlier so you still arrive on time. You don't need to do anything — it happens in the background.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="question">Does Departd work with virtual meetings?</div>
-            <div class="answer">Yes. Departd detects virtual meetings (Zoom, Microsoft Teams, Google Meet, Webex, and others) from your calendar events and skips travel calculations. Instead, it shows a "Join Meeting" button that opens the meeting directly in the correct app.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="question">What is Triage Mode?</div>
-            <div class="answer">If conditions change and on-time arrival becomes impossible, Departd switches to Triage Mode. It offers recovery options: skip an optional stop (like your coffee run), open navigation for the fastest route, or send a quick "running late" message — all with one tap.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="question">What permissions does Departd need?</div>
-            <div class="answer">Departd needs three permissions to work: <strong>Calendar</strong> access to read your events, <strong>Location</strong> access to calculate travel times and detect when you arrive, and <strong>Notifications</strong> to deliver your alarm and departure alerts. You can adjust these anytime in iOS Settings. The app will work with reduced functionality if permissions are revoked.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="question">Will my alarm still go off if I lose internet overnight?</div>
-            <div class="answer">Yes. Departd sets your initial alarm based on the last known conditions. The Background Traffic Watcher attempts to update it overnight, but if the network is unavailable, your original alarm time remains set. We recommend also setting a backup alarm for critical events like flights.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="question">Does Departd track my location or sell my data?</div>
-            <div class="answer">No. All calendar and location processing happens on your device. We only send your destination coordinates (not personal information) to weather and mapping services to calculate travel conditions. We do not have user accounts, we do not track you, and we do not sell any data. See our <a href="https://chrisradtke0.github.io/smartalarm-legal/privacy-policy.html">Privacy Policy</a> for full details.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="question">How do I restore my settings on a new device?</div>
-            <div class="answer">Departd syncs your settings (home address, work address, preparation times, transport preferences, and other configuration) to iCloud automatically. When you install Departd on a new device signed into the same Apple ID, your settings will be restored. Make sure iCloud is enabled for Departd in iOS Settings → [Your Name] → iCloud → Apps Using iCloud.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="question">How do I cancel my Pro or Family subscription?</div>
-            <div class="answer">Subscriptions are managed through Apple. Go to iOS Settings → [Your Name] → Subscriptions → Departd → Cancel Subscription. Your Pro features will remain active until the end of your current billing period.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="question">The app gave me the wrong travel time. What should I do?</div>
-            <div class="answer">Travel time estimates come from Apple Maps and can occasionally be inaccurate, especially for new routes or during unusual conditions. You can adjust your buffer time in Settings to add extra padding. If you consistently see inaccurate times for a specific route, please contact us with details and we'll investigate. Always set a backup alarm for time-critical events.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="question">I'm having trouble with the app. What information should I include when contacting support?</div>
-            <div class="answer">To help us troubleshoot quickly, please include: your iPhone model, iOS version, a description of the issue, and if possible, a screenshot. If the issue involves a specific event or route, let us know the general details (e.g., "commute from home to downtown, morning event"). You can send all of this to <a href="mailto:hello@departd.app?subject=Departd%20Bug%20Report">hello@departd.app</a>.</div>
-        </div>
-
-        <h2>Troubleshooting</h2>
-
-        <div class="faq-item">
-            <div class="question">My alarm didn't fire</div>
-            <div class="answer">Check that Notifications are enabled for Departd in iOS Settings → Notifications → Departd. Make sure Do Not Disturb or a Focus Mode isn't blocking Departd notifications — you can add Departd as an allowed app in your Focus settings. Also verify that the app has calculated an alarm (you should see a wake-up or departure time on the main screen).</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="question">The app doesn't see my calendar events</div>
-            <div class="answer">Go to iOS Settings → Privacy & Security → Calendars and make sure Departd is toggled on. If you use multiple calendar accounts (iCloud, Google, Exchange), verify the specific calendar containing your events is enabled in the Apple Calendar app as well.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="question">Background updates aren't working</div>
-            <div class="answer">iOS manages background activity to preserve battery life. Make sure Background App Refresh is enabled for Departd in iOS Settings → General → Background App Refresh. Also ensure Departd is not in Low Power Mode restrictions. Note that iOS may still delay background tasks based on system conditions — this is normal and expected.</div>
-        </div>
+        <p>Help, answers to common questions and subscription help are on our website: <a href="https://www.departd.app/support">departd.app/support</a>.</p>
+        <p>For a flight, an interview or anything else you truly can't be late for, set a backup alarm as well.</p>
 
         <div class="links">
             <a href="https://chrisradtke0.github.io/smartalarm-legal/privacy-policy.html">Privacy Policy</a>
